@@ -18,3 +18,4 @@ Route::get('contactus',function(){
     return view('contactus');
 });
 Route::post('contactus','contactusController@store');
+//Route::resource('success','contactusController')
