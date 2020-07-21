@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -21,5 +22,6 @@ class contactusController extends Controller
          $contact->subject=$request->visitor_subject;
          $contact->message=$request->visitor_message;
          $contact->save();
+         return redirect('contact')->with('status','Thank You!');
     }
 }
