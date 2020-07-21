@@ -98,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="mail_form">
 				<h3 class="tittle-w3ls">Send Us a Message</h3>
 				<div class="inner_sec_info_wthree_agile">
-					<form action="{{url('contactus')}}" method="post">
+					<form action="{{url('contact')}}" method="post">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<span class="input input--chisato">
 						<input class="input__field input__field--chisato" name="visitor_name" type="text" id="input-13" placeholder=" " required="" />

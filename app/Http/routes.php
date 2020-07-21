@@ -42,6 +42,6 @@ Route::get('signup',function(){
 Route::get('single',function(){
     return view('single');
 });
-Route::post('contactus','contactusController@store',function(){
+Route::post('contact','contactusController@store',function(){
     return view('thanks');
 });
