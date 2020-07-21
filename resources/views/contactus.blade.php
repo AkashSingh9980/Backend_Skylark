@@ -5,7 +5,9 @@
 </head>
 
 <body>
-    <form action="../contactus.php" method="post">
+    
+    <form action="{{url('contactus')}}" method="post">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="elem-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}"

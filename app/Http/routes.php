@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('contactus',function(){
     return view('contactus');
 });
+Route::post('contactus','contactusController@store');
