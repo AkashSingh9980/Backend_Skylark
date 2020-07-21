@@ -12,10 +12,36 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-Route::get('contactus',function(){
-    return view('contactus');
+Route::get('career',function(){
+    return view('career');
 });
-Route::post('contactus','contactusController@store');
-//Route::resource('success','contactusController')
+//change the next from contactus to contact, now need to use stuff in actual site
+Route::get('contact',function(){
+    return view('contact');
+});
+Route::get('gallery',function(){
+    return view('gallery');
+});
+Route::get('packages',function(){
+    return view('packages');
+});
+Route::get('product',function(){
+    return view('product');
+});
+Route::get('services',function(){
+    return view('services');
+});
+Route::get('signin',function(){
+    return view('sigin');
+});
+Route::get('signup',function(){
+    return view('sigup');
+});
+Route::get('single',function(){
+    return view('single');
+});
+Route::post('contactus','contactusController@store',function(){
+    return view('thanks');
+});
