@@ -56,11 +56,11 @@
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Services <span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="packages.html">Packages</a></li>
-									<li><a href="product.html">Products</a></li>
-									<li><a href="services.html">Services</a></li>
+									<li><a href="packages">Packages</a></li>
+									<li><a href="product">Products</a></li>
+									<li><a href="services">Services</a></li>
 								</ul>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="contact">Contact</a></li>
 							</li>
 						</ul>
 					</div>
@@ -85,10 +85,10 @@
 						<p>A Google Certified Company</p>
 						<div class="top-buttons">
 							<div class="bnr-button">
-								<a class="act" href="single.html">Read More</a>
+								<a class="act" href="single">Read More</a>
 							</div>
 							<div class="bnr-button">
-								<a href="portfolio.html" class="two scroll ">Portfolio</a>
+								<a href="portfolio" class="two scroll ">Portfolio</a>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -105,7 +105,7 @@
 								<a class="act" href="single.html">Read More</a>
 							</div>
 							<div class="bnr-button">
-								<a href="portfolio.html" class="two scroll ">Portfolio</a>
+								<a href="portfolio" class="two scroll ">Portfolio</a>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -119,10 +119,10 @@
 						<p>Solutions made easy</p>
 						<div class="top-buttons">
 							<div class="bnr-button">
-								<a class="act" href="single.html">Read More</a>
+								<a class="act" href="single">Read More</a>
 							</div>
 							<div class="bnr-button">
-								<a href="portfolio.html" class="two scroll ">Portfolio</a>
+								<a href="portfolio" class="two scroll ">Portfolio</a>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -161,7 +161,7 @@
 							functionality, customization and flexibility.
 						</p>
 						<div class="ab_button">
-							<a class="btn btn-primary btn-lg hvr-underline-from-left" href="single.html" role="button">Read More </a>
+							<a class="btn btn-primary btn-lg hvr-underline-from-left" href="single" role="button">Read More </a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -423,7 +423,7 @@
 	<div class="footer">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><i class="fa fa-clone" aria-hidden="true"></i>  SKYLARK GROUP</a></h2>
+				<h2><a href="/"><i class="fa fa-clone" aria-hidden="true"></i>  SKYLARK GROUP</a></h2>
 				<p>AIM FOR SKY</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
@@ -451,25 +451,25 @@
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="404.html">Services</a></li>
-							<li><a href="signin.html">Sign in</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="/">Home</a></li>
+							<li><a href="about">About</a></li>
+							<li><a href="services">Services</a></li>
+							<li><a href="signin">Sign in</a></li>
+							<li><a href="contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 sign-gd flickr-post">
 						<h4>Our <span>Works</span></h4>
 						<ul>
-							<li><a href="single.html"><img src="images/g1.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g2.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g3.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g5.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g6.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g7.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g8.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g1.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g3.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g5.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g6.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g7.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g8.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
 						</ul>
 					</div>
 					<div class="col-md-5 sign-gd-two">
