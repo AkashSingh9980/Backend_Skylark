@@ -48,26 +48,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="icon-bar"></span>
           </button>
 					<div class="logo-w3layouts-agileits">
-						<h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> Conceit <span class="desc">For your Business</span></a></h1>
+						<h1> <a class="navbar-brand" href="index"><i class="fa fa-clone" aria-hidden="true"></i> Conceit <span class="desc">For your Business</span></a></h1>
 					</div>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<div class="nav_right_top">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a class="request" href="contact.html">Send Request</a></li>
+							<li><a class="request" href="contact">Send Request</a></li>
 
 						</ul>
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="active"><a href="gallery.html">Gallery</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="portfolio">Portfolio</a></li>
+							<li><a href="contact">Contact</a></li>
+							<li class="active"><a href="gallery">Gallery</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Our Services <span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="packages.html">Packages</a></li>
-									<li><a href="products.html">Products</a></li>
-									<li><a href="services.html">Services</a></li>
+									<li><a href="packages">Packages</a></li>
+									<li><a href="products">Products</a></li>
+									<li><a href="services">Services</a></li>
 
 
 								</ul>
@@ -198,51 +198,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Top stories of the week </h4>
 						<div class="blog-grids">
 							<div class="blog-grid-left">
-								<a href="single.html"><img src="images/g6.jpg" class="img-responsive" alt=""/></a>
+								<a href="single"><img src="images/g6.jpg" class="img-responsive" alt=""/></a>
 							</div>
 							<div class="blog-grid-right">
 
-								<h5><a href="single.html">Pellentesque dui, non felis. Maecenas male</a> </h5>
+								<h5><a href="single">Pellentesque dui, non felis. Maecenas male</a> </h5>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="blog-grids">
 							<div class="blog-grid-left">
-								<a href="single.html"><img src="images/g7.jpg" class="img-responsive" alt=""/></a>
+								<a href="single"><img src="images/g7.jpg" class="img-responsive" alt=""/></a>
 							</div>
 							<div class="blog-grid-right">
 
-								<h5><a href="single.html">Pellentesque dui, non felis. Maecenas male</a> </h5>
+								<h5><a href="single">Pellentesque dui, non felis. Maecenas male</a> </h5>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="blog-grids">
 							<div class="blog-grid-left">
-								<a href="single.html"><img src="images/g3.jpg" class="img-responsive" alt=""/></a>
+								<a href="single"><img src="images/g3.jpg" class="img-responsive" alt=""/></a>
 							</div>
 							<div class="blog-grid-right">
 
-								<h5><a href="single.html">Pellentesque dui, non felis. Maecenas male</a> </h5>
+								<h5><a href="single">Pellentesque dui, non felis. Maecenas male</a> </h5>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="blog-grids">
 							<div class="blog-grid-left">
-								<a href="single.html"><img src="images/g5.jpg" class="img-responsive" alt=""/></a>
+								<a href="single"><img src="images/g5.jpg" class="img-responsive" alt=""/></a>
 							</div>
 							<div class="blog-grid-right">
 
-								<h5><a href="single.html">Pellentesque dui, non felis. Maecenas male</a> </h5>
+								<h5><a href="single">Pellentesque dui, non felis. Maecenas male</a> </h5>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="blog-grids">
 							<div class="blog-grid-left">
-								<a href="single.html"><img src="images/g1.jpg" class="img-responsive" alt=""/></a>
+								<a href="single"><img src="images/g1.jpg" class="img-responsive" alt=""/></a>
 							</div>
 							<div class="blog-grid-right">
 
-								<h5><a href="single.html">Pellentesque dui, non felis. Maecenas male</a> </h5>
+								<h5><a href="single">Pellentesque dui, non felis. Maecenas male</a> </h5>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -292,25 +292,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="404.html">Services</a></li>
-							<li><a href="signin.html">Signin</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="about">About</a></li>
+							<li><a href="404">Services</a></li>
+							<li><a href="signin">Signin</a></li>
+							<li><a href="contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 sign-gd flickr-post">
 						<h4>Our <span>Works</span></h4>
 						<ul>
-							<li><a href="single.html"><img src="images/g1.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g2.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g3.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g5.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g6.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g7.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g8.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g1.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g3.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g5.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g6.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g7.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g8.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
 						</ul>
 					</div>
 					<div class="col-md-5 sign-gd-two">
