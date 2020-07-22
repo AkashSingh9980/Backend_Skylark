@@ -100,147 +100,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 
 				<ul class="portfolio-area">
-
-					<li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
-						<div>
-							<span class="image-block block2 img-hover">
-							<a href="images/g1.jpg" rel="prettyPhoto[gallery]">
-							
-									<img src="images/g1.jpg" class="img-responsive" alt="Conceit">
-									<div class="port-info">
-											<h5>Skylark Lab</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-					</li>
-
-
-					<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g2.jpg" rel="prettyPhoto[gallery]">
+					@foreach($services as $service)
+						<li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
+							<div>
+								<span class="image-block block2 img-hover">
+								<a href="images/{{$service->imgfile}}" rel="prettyPhoto[gallery]">
 								
-									<img src="images/g2.jpg" class="img-responsive" alt="Conceit">
-								      <div class="port-info">
-											<h5>Software Development</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-					</li>
-
-
-					<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g3.jpg" rel="prettyPhoto[gallery]">
-							
-									<img src="images/g3.jpg" class="img-responsive" alt="Conceit">
-								<div class="port-info">
-											<h5>Business Development</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-					</li>
-
-					<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g4.jpg" rel="prettyPhoto[gallery]">
-								
-									<img src="images/g4.jpg" class="img-responsive" alt="Conceit">
-									<div class="port-info">
-											<h5>Automation</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-                    </li>
-                    
-					<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g5.jpg" rel="prettyPhoto[gallery]">
-								
-									<img src="images/g5.jpg" class="img-responsive" alt="Conceit">
-									<div class="port-info">
-											<h5>Digital Marketing</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-					</li>
-
-
-					<li class="portfolio-item2" data-id="id-5" data-type="cat-item-2">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g6.jpg" rel="prettyPhoto[gallery]">
-								
-									<img src="images/g6.jpg" class="img-responsive" alt="Conceit">
-									<div class="port-info">
-											<h5>Real Estate&Civil</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-					</li>
-
-
-					<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g7.jpg" rel="prettyPhoto[gallery]">
-							
-									<img src="images/g7.jpg" class="img-responsive" alt="Conceit">
-								      <div class="port-info">
-											<h5>Action Business Coaching</h5>
-											<p>View More...</p>
-										</div>
-							</a>
-						</span>
-						</div>
-					</li>
-
-
-					<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g8.jpg" rel="prettyPhoto[gallery]">
-								
-									<img src="images/g8.jpg" class="img-responsive" alt="Conceit">
+										<img src="images/{{$service->imgfile}}" class="img-responsive" alt="Conceit">
 										<div class="port-info">
-											<h5>Cyber Security</h5>
-											<p>View More...</p>
-										</div>
-							    </a>
-						    </span>
-						</div>
-					</li>
-					<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
-						<div>
-							<span class="image-block block2">
-							<a class="image-zoom" href="images/g1.jpg" rel="prettyPhoto[gallery]">
-								
-									<img src="images/g9.jpg" class="img-responsive" alt="Conceit">
-										<div class="port-info">
-											<h5>Legal&International Payment</h5>
-											<p>View More...</p>
-										</div>
-							    </a>
-						    </span>
-						</div>
-					</li>
-
-
+												<h5>{{$service->title}}</h5>
+												<p>{{$service->details}}</p>
+											</div>
+								</a>
+							</span>
+							</div>
+						</li>
+					@endforeach
 					<div class="clearfix"></div>
 				</ul>
 				<!--end portfolio-area -->

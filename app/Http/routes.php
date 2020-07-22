@@ -29,9 +29,9 @@ Route::get('packages',function(){
 Route::get('product',function(){
     return view('product');
 });
-Route::get('services',function(){
-    return view('services');
-});
+
+Route::get('services','servicesController@index');
+
 Route::get('signin',function(){
     return view('sigin');
 });
