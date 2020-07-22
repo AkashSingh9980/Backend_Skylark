@@ -70,18 +70,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						</ul>
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="career.html">Career</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="gallery">Gallery</a></li>
+							<li><a href="career">Career</a></li>
 
 							<li class="active"  class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Services<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="packages.html">Packages</a></li>
-									<li class="active" ><a href="product.html">Products</a></li>
-									<li><a href="services.html">Services</a></li>
+									<li><a href="packages">Packages</a></li>
+									<li class="active" ><a href="product">Products</a></li>
+									<li><a href="services">Services</a></li>
 								</ul>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="contact">Contact</a></li>
 							</li>
 						</ul>
 					</div>
@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="inner_breadcrumb">
 
 			<ul class="short">
-				<li><a href="index.html">Home</a><span>|</span></li>
+				<li><a href="index">Home</a><span>|</span></li>
 				<li>Products</li>
 			</ul>
 		</div>
@@ -387,7 +387,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> SKYLARK GROUP </a></h2>
+				<h2><a href="index"><i class="fa fa-clone" aria-hidden="true"></i> SKYLARK GROUP </a></h2>
 				<p>SKYLARK AUTOMATION PVT LTD is the leading Automation Group of Smart technologies in India.
 
 Founder CEO – Prachie Sorte Jagtap- Certified System Integrator. Our Systems are designed to fit your lifestyle and allow you to seamlessly control all aspects of your home, including lighting, appliances, curtains and blinds, multi-room audio, security, digital surveillance and entertainment.</p>
@@ -423,25 +423,25 @@ Founder CEO – Prachie Sorte Jagtap- Certified System Integrator. Our Systems a
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="404.html">Services</a></li>
-							<li><a href="signin.html">Signin</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="about">About</a></li>
+							<li><a href="404">Services</a></li>
+							<li><a href="signin">Signin</a></li>
+							<li><a href="contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 sign-gd flickr-post">
 						<h4>Our <span>Works</span></h4>
 						<ul>
-							<li><a href="single.html"><img src="images/AudioVideoSystem.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/HomeAutomationSolution.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/MoodLighting.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/GSMalarmSystem.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/SmartHomeSolution.jpeg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/SkyHomeView.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/WirelessEntry.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/SmartHomeSolution.jpeg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="images/SkyHomeView.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/AudioVideoSystem.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/HomeAutomationSolution.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/MoodLighting.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/GSMalarmSystem.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/SmartHomeSolution.jpeg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/SkyHomeView.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/WirelessEntry.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/SmartHomeSolution.jpeg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single"><img src="images/SkyHomeView.jpg" alt=" " class="img-responsive" /></a></li>
 						</ul>
 					</div>
 					<div class="col-md-5 sign-gd-two">
