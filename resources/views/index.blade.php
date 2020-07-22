@@ -50,7 +50,7 @@
 
 						</ul>
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="index">Home</a></li>
 							<li><a href="gallery">Gallery</a></li>
 							<li><a href="career">Career</a></li>
 							<li class="dropdown">
