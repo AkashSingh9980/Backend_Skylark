@@ -58,7 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						</ul>-->
 						<ul class="nav navbar-nav">
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
                             <li><a href="gallery">Gallery</a></li>
 							<li><a href="career">Career</a></li>
 		
@@ -136,27 +136,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
-						<a href="#" class="facebook">
+						<a href="https://www.facebook.com/skylarkautomation" class="facebook">
 							<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="twitter">
+						<a href="https://twitter.com/IndiaSkylark" class="twitter">
 							<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="instagram">
+						<a href="https://www.instagram.com/skylark_automation" class="instagram">
 							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="pinterest">
-							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 						</a>
 					</li>
 				</ul>
@@ -166,7 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li><a href="about">About</a></li>
 							<li><a href="services">Services</a></li>
 							<li><a href="signin">Signin</a></li>
@@ -196,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Phone Number</h6>
-									<p>+1 234 567 8901</p>
+									<p>+91 20 2681 3077</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -206,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+									<p>Email :<a href="mailto:sales@skylarkautomation.in"> sales@skylarkautomation.in</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -216,7 +210,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Location</h6>
-									<p>Broome St, NY 10002,California, USA.
+									<p>C 7 tara Aayi Residency, Kawade Complex, BT Kawade Road, Ghorpadi, Pune-411001
+
 
 									</p>
 								</div>

@@ -13,8 +13,7 @@
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Conceit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="SKYLARK GROUP consist of highly skilled people in their domain" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -70,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						</ul>
 						<ul class="nav navbar-nav">
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li><a href="gallery">Gallery</a></li>
 							<li><a href="career">Career</a></li>
 
@@ -97,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="inner_breadcrumb">
 
 			<ul class="short">
-				<li><a href="index">Home</a><span>|</span></li>
+				<li><a href="/">Home</a><span>|</span></li>
 				<li>Products</li>
 			</ul>
 		</div>
@@ -387,33 +386,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index"><i class="fa fa-clone" aria-hidden="true"></i> SKYLARK GROUP </a></h2>
+				<h2><a href="/"><i class="fa fa-clone" aria-hidden="true"></i> SKYLARK GROUP </a></h2>
 				<p>SKYLARK AUTOMATION PVT LTD is the leading Automation Group of Smart technologies in India.
 
 Founder CEO – Prachie Sorte Jagtap- Certified System Integrator. Our Systems are designed to fit your lifestyle and allow you to seamlessly control all aspects of your home, including lighting, appliances, curtains and blinds, multi-room audio, security, digital surveillance and entertainment.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
-						<a href="#" class="facebook">
+						<a href="https://www.facebook.com/skylarkautomation" class="facebook">
 							<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="twitter">
+						<a href="https://twitter.com/IndiaSkylark" class="twitter">
 							<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="instagram">
+						<a href="https://www.instagram.com/skylark_automation" class="instagram">
 							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="pinterest">
-							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 						</a>
 					</li>
 				</ul>
@@ -423,9 +416,9 @@ Founder CEO – Prachie Sorte Jagtap- Certified System Integrator. Our Systems a
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="404">Services</a></li>
+							<li><a href="services">Services</a></li>
 							<li><a href="signin">Signin</a></li>
 							<li><a href="contact">Contact</a></li>
 						</ul>
@@ -463,7 +456,7 @@ Founder CEO – Prachie Sorte Jagtap- Certified System Integrator. Our Systems a
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:example@email.com"> skylarkautomation@gmail.com</a></p>
+									<p>Email :<a href="mailto:skylarkautomation@gmail.com"> skylarkautomation@gmail.com</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -487,7 +480,7 @@ Founder CEO – Prachie Sorte Jagtap- Certified System Integrator. Our Systems a
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right">&copy 2018 Conceit. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			<p class="copy-right"> <a href="http://w3layouts.com/"></a></p>
 		</div>
 	</div>
 	</div>

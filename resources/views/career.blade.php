@@ -48,7 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="icon-bar"></span>
           </button>
 					<div class="logo-w3layouts-agileits">
-						<h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> SKYLARK GROUP <span class="desc">AIM FOR SKY</span></a></h1>
+						<h1> <a class="navbar-brand" href="/"><i class="fa fa-clone" aria-hidden="true"></i> SKYLARK GROUP <span class="desc">AIM FOR SKY</span></a></h1>
 					</div>
 				</div>
 			<!--<div id="navbar" class="navbar-collapse collapse">
@@ -168,31 +168,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index"><i class="fa fa-clone" aria-hidden="true"></i>SKYLARK GROUP </a></h2>
-				<p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+				<h2><a href="/"><i class="fa fa-clone" aria-hidden="true"></i>SKYLARK GROUP </a></h2>
+				<p>AIM FOR SKY</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
-						<a href="#" class="facebook">
+						<a href="https://www.facebook.com/skylarkautomation" class="facebook">
 							<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="twitter">
+						<a href="https://twitter.com/IndiaSkylark" class="twitter">
 							<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="instagram">
+						<a href="https://www.instagram.com/skylark_automation" class="instagram">
 							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="pinterest">
-							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 						</a>
 					</li>
 				</ul>
@@ -202,12 +196,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="404">Services</a></li>
+							<li><a href="services">Services</a></li>
 							<li><a href="signin">Signin</a></li>
-							<li><a href="contact">Contact</a></li>
-							<li><a href="career">Career</a><li>						
+							<li><a href="contact">Contact</a></li>					
 							</ul>
 					</div>
 					<div class="col-md-3 sign-gd flickr-post">
@@ -233,7 +226,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Phone Number</h6>
-									<p>+1 234 567 8901</p>
+									<p>+91 20 2681 3077</p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -243,7 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+									<p>Email :<a href="mailto:sales@skylarkautomation.in">sales@skylarkautomation.in</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -253,7 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Location</h6>
-									<p>Broome St, NY 10002,California, USA.
+									<p>C 7 tara Aayi Residency, Kawade Complex, BT Kawade Road, Ghorpadi, Pune-411001
 
 									</p>
 								</div>
@@ -267,7 +260,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right">&copy 2018 Conceit. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			<p class="copy-right"><a href="http://w3layouts.com/"></a></p>
 		</div>
 	</div>
 	</div>

@@ -491,7 +491,7 @@
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p><a href="mailto:example@email.com">sales@skylarkautomation.in</a></p>
+									<p><a href="mailto:sales@skylarkautomation.in">sales@skylarkautomation.in</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>

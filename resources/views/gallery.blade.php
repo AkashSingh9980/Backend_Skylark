@@ -3,12 +3,11 @@
 <html>
 
 <head>
-	<title>Conceit a Corporate Category Bootstrap Responsive Web Template | Portfolio :: w3layouts</title>
+	<title>Skylark Automation india</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Conceit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="SKYLARK GROUP consist of highly skilled people in their domain" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -52,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						</ul>
 						<ul class="nav navbar-nav">
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li><a href="about">About</a></li>
 							<li class="active"><a href="gallery">Gallery</a></li>
 							<li><a href="career">Career</a></li>
@@ -60,10 +59,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="portfolio">Projects</a></li>
-									<li><a href="404">Services</a></li>
-
-
+									<li><a href="packages">Packages</a></li>
+									<li><a href="product">Products</a></li>
+									<li><a href="services">Services</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -80,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="inner_breadcrumb">
 
 			<ul class="short">
-				<li><a href="index">Home</a><span>|</span></li>
+				<li><a href="/">Home</a><span>|</span></li>
 				<li>Gallery</li>
 			</ul>
 		</div>
@@ -680,7 +678,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index"><i class="fa fa-clone" aria-hidden="true"></i>  SKYLARK GROUP</a></h2>
+				<h2><a href="/"><i class="fa fa-clone" aria-hidden="true"></i>  SKYLARK GROUP</a></h2>
 				<p>REACH FOR THE SKY</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
@@ -708,9 +706,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 sign-gd">
 						<h4>Latest <span>Info</span> </h4>
 						<ul>
-							<li><a href="index">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="404">Services</a></li>
+							<li><a href="services">Services</a></li>
 							<li><a href="signin">Sign in</a></li>
 							<li><a href="contact">Contact</a></li>
 						</ul>
@@ -748,7 +746,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p><a href="mailto:example@email.com">sales@skylarkautomation.in</a></p>
+									<p><a href="mailto:sales@skylarkautomation.in">sales@skylarkautomation.in</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
