@@ -25,9 +25,7 @@ Route::get('gallery',function(){
 });
 Route::get('packages','packagesController@index');
 
-Route::get('product',function(){
-    return view('product');
-});
+Route::get('product','productController@index');
 
 Route::get('services','servicesController@index');
 
