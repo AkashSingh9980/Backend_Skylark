@@ -290,10 +290,12 @@ Reference taken from [here](https://dev.to/jsafe00/deploy-laravel-application-wi
 
 Currently, 2 Controllers are set up in `app/Http/Controllers/`:
 
-- `contactusController.php`: sends data from global value `$request` to database, returning a redirect to `contact` view with `status` set to 'Thank You!', which is used in the @if and @else in `contact.blade.php`
+- `contactusController.php`: sends data from global value `$request` to database, returning a redirect to `contact` view with `status` set to 'Thank You!', which is used in the @if and @else in `contact.blade.php`.
+
+  
 
   ```php
-public function store(Request $request)
+  public function store(Request $request)
       {
           //Validate the request
           //request variables are the ```name``` of the fields in blade 
@@ -306,10 +308,12 @@ public function store(Request $request)
            return redirect('contact')->with('status','Thank You!');
       }
   ```
-  
-   
 
+   
+  
 - `servicesController.php`: gets data using `get()` from the table `services` in database, as an array of rows into `$services`. We return the view here, instead of a callback in `routes.php` , with a variable `services` taking values from `$services`, which we use in `services.blade.php` to iterate over.
+
+  
 
   ```php
   public function index()
