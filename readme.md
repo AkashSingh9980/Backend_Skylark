@@ -241,7 +241,7 @@ Present in `config/database.php`
   {
       public function up()
       {
-          //the following is only an example, please refer Migrations documentation for 			full info on datatypes
+          //the following is only an example, please refer Migrations documentation for full info on datatypes
           Schema::create('<<name of table>>',function(Blueprint $table){
               $table->increments('<<primary key field>>');
               $table->text('<<text field>>');

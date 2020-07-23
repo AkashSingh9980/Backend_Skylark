@@ -23,9 +23,8 @@ Route::get('contact',function(){
 Route::get('gallery',function(){
     return view('gallery');
 });
-Route::get('packages',function(){
-    return view('packages');
-});
+Route::get('packages','packagesController@index');
+
 Route::get('product',function(){
     return view('product');
 });
