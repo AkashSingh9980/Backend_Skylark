@@ -38,27 +38,13 @@
               <h3 class="card-title text-center">Register to Skylark</h3>
               <div class="card-text">
                 @if(session('message'))
-                
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Message</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        {{session('message')}}
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        
-                      </div>
-                    </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{session('message')}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                </div>
-                <script>$('#exampleModal').modal('toggle');</script>
+                <script>$('.alert').alert();</script>
                 @endif        
                   <form method="post" action="{{url('register')}}">
                       <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -92,14 +78,23 @@
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">BISH</div> 
                           @enderror --}}
 
-                          <a href="changepassword" style="float: right; font-size: 12px;">Forgot password?</a>
-                          <br>
                       </div>
+                      <div class="form-group">
+                        <label for="password">Admin Key</label>
+
+                        <input type="password" class="form-control form-control-sm " id="adminkey" name="adminkey" 
+                               required/>
+                        {{-- @error('password')
+                          <div class="alert alert-danger alert-dismissible fade show" role="alert">BISH</div> 
+                        @enderror --}}
+
+                        <br>
+                    </div>
                       <button type="submit" class="btn btn-primary btn-block" value="">
-                          Login
+                          Register
                       </button>
                       <div class="sign-up">
-                        New here? <a href="register">Sign Up</a>
+                        Already registered? <a href="login">Login</a>
                     </div>
                   </form>
               </div>
