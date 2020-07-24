@@ -20,9 +20,28 @@ Route::get('career',function(){
 Route::get('contact',function(){
     return view('contact');
 });
+Route::post('contact','contactusController@store');
+
+
 Route::get('gallery',function(){
     return view('gallery');
 });
+
+Route::get('login',function(){
+    return view('login');
+});
+Route::post('login','Auth\loginController@authenticate');
+
+Route::get('register',function(){
+    return view('register');
+});
+Route::get('dashboard',function(){
+    return view('dashboard');
+})->middleware('auth');
+
+Route::get('logout','Auth\loginController@logout');
+Route::post('register','Auth\loginController@register');
+
 Route::get('packages','packagesController@index');
 
 Route::get('product','productController@index');
@@ -41,4 +60,4 @@ Route::get('single',function(){
 Route::get('thankyou',function(){
     return view('thankyou');
 });
-Route::post('contact','contactusController@store');
+
