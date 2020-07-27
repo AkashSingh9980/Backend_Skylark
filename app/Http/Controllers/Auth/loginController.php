@@ -62,4 +62,6 @@ class loginController extends Controller
             return redirect('register')->with('message','Invalid Key');
         }
     }
+
+    
 }

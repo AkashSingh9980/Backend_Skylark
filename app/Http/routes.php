@@ -35,9 +35,7 @@ Route::post('login','Auth\loginController@authenticate');
 Route::get('register',function(){
     return view('register');
 });
-Route::get('dashboard',function(){
-    return view('dashboard');
-})->middleware('auth');
+Route::get('dashboard','Admin\dashboardController@index')->middleware('auth');//add 
 
 Route::get('logout','Auth\loginController@logout');
 Route::post('register','Auth\loginController@register');
