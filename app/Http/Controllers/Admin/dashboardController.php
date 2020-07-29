@@ -33,6 +33,17 @@ class dashboardController extends Controller
         $services=DB::table('services')->get();
         return view('dashboard/services',['services'=>$services]);
     }
+    public function packagesDestroy($id)
+    {
+        DB::table('packages')->where('id','=',$id)->delete();
+        return response()->json(['success'=>"Package deleted succesfully",'tr'=>$id]);
+    }
+    public function packagesDeleteAll(Request $request)
+    {
+        $ids=$request->ids;
+        //DB::table('packages')->whereIn('id',explode(",",$ids))->delete();
+        return response()->json(['success'=>"Packages deleted succesfully"]);
+    }
 
     
 }

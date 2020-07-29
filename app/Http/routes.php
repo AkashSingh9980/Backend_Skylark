@@ -37,6 +37,8 @@ Route::get('register',function(){
 });
 Route::get('dashboard','Admin\dashboardController@index')->middleware('auth');//add
 Route::get('dashboard/packages','Admin\dashboardController@packagesIndex')->middleware('auth'); 
+Route::delete('dashboard/packages/{id}','Admin\dashboardController@packagesDestroy')->middleware('auth');
+Route::delete('dashboard/packagesDeleteAll','Admin\dashboardController@packagesDeleteAll')->middleware('auth');
 
 Route::get('logout','Auth\loginController@logout');
 Route::post('register','Auth\loginController@register');
