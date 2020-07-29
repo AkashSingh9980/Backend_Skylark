@@ -222,12 +222,9 @@
                 if(check==true){
                     var join_selected_values=allVals.join(",");
                     var baap=$(this).parent();
-                    // console.log(baap);
                     baap.html(
                         `<div class="progress" style="width:25%"><div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>`
                     );
-                    // console.log(baap);
-
                     $.ajax({
                         url:$(this).data('url'),
                         type:'DELETE',
@@ -236,12 +233,11 @@
                         success:function(data){
                             if(data['success']){
                                 $(".sub_chk:checked").each(function(){
-                                    console.log($(this))
                                     $(this).parents('tr').remove();
                                 });
                                 baap.html(`<button style="margin-bottom: 10px" class="btn btn-danger delete_all" data-url="{{url('dashboard/packagesDeleteAll')}}">Delete All Selected</button>`);
                                 alert(data['success']);
-                                //location.reload(true);
+                                location.reload(true);
                             }
                             else if(data['error']){
                                 alert(data['error']);                             
@@ -271,7 +267,6 @@
             baap.html(
                 `<div class="progress"><div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>`
             );
-            // console.log($(this).parent());
                 
             var selected_values=[];
             selected_values.push($(this).attr('data-id'));
@@ -282,13 +277,10 @@
                 data:'ids='+selected_values,
                 success:function(data){
                     if(data['success']){
-                      console.log($(".sub-chk"));
-                      $(this).parents('tr').remove();
+                      baap.parent().remove();
                       baap.html(`<button type="button" style="margin-bottom: 10px" class="btn btn-outline-danger delete_single" disabled><i class="fa fa-check"></i></button>`);
-                      
                       alert(data['success']);
-                        //baap.html(`<button type="button" style="margin-bottom: 10px" class="btn btn-outline-danger delete_single" disabled><i class="fa fa-check"></i></button>`);
-                        
+                      location.reload(true);
                     }
                     else if(data['error']){
                         alert(data['error']);                             
