@@ -35,11 +35,7 @@ class dashboardController extends Controller
         $services=DB::table('services')->get();
         return view('dashboard/services',['services'=>$services]);
     }
-    public function packagesDestroy($id)
-    {
-        DB::table('packages')->where('id','=',$id)->delete();
-        return response()->json(['success'=>"Package deleted succesfully",'tr'=>$id]);
-    }
+    
     public function packagesDeleteAll(Request $request)
     {
         $ids=$request->ids;
@@ -58,6 +54,20 @@ class dashboardController extends Controller
         $package->description=$request->inputItemDescription;
         $package->save();
         return redirect('dashboard/packages')->with('insertStatus','Your package was succesfully added.');
+    }
+    public function packagesUpdate(Request $request)
+    {
+        $package=package::where('id','=',$request->editItemDBID);
+
+        $package->dataid=$request->editItemId;
+        $package->datatype=$request->editItemDatatype;
+        $package->title=$request->editItemTitle;
+
+        $package->price="₹" . $request->editItemPrice;
+        $package->header=$request->editItemHeader;
+        $package->description=$request->editItemDescription;
+        DB::table('packages')->where('id',$request->editItemDBID)->update(['dataid'=>$request->editItemId,'datatype'=>$request->editItemDatatype,'title'=>$request->editItemTitle,'price'=>"₹" . $request->editItemPrice,'header'=>$request->editItemHeader,'description'=>$request->editItemDescription]);
+        return redirect('dashboard/packages')->with('editStatus','Your package was succesfully edited.');
     }
     
 }

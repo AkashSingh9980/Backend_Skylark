@@ -107,6 +107,14 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
+                @elseif(session('editStatus'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <h4>Edit done!</h4>
+                  <p>{{session('editStatus')}}</p>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
                 @endif
                 <div>
                   <button style="margin-bottom: 10px" class="btn btn-secondary" data-toggle="modal" data-target="#insertModal">
@@ -141,15 +149,18 @@
                         <tr id="{{$package->id}}">
                           <td><input type="checkbox" class="sub_chk" data-id="{{$package->id}}"></td>
                           <td>{{$package->id}}</td>
-                          <td contenteditable="true">{{$package->dataid}}</td>
-                          <td contenteditable="true">{{$package->datatype}}</td>
-                          <td contenteditable="true">{{$package->title}}</td>
-                          <td contenteditable="true">{{$package->price}}</td>
-                          <td contenteditable="true">{{$package->header}}</td>
-                          <td contenteditable="true">{{$package->description}}</td>
+                          <td>{{$package->dataid}}</td>
+                          <td>{{$package->datatype}}</td>
+                          <td>{{$package->title}}</td>
+                          <td>{{$package->price}}</td>
+                          <td>{{$package->header}}</td>
+                          <td>{{$package->description}}</td>
                           <td>
                             <button style="margin-bottom: 10px" class="btn btn-outline-danger delete_single" data-url="{{url('dashboard/packagesDeleteAll')}}" data-id="{{$package->id}}">
                                 <i class="fa fa-trash"></i>
+                            </button>
+                            <button style="margin-bottom: 10px" class="btn btn-outline-primary edit_single" data-id="{{$package->id}}" data-dataid="{{$package->dataid}}" data-datatype="{{$package->datatype}}" data-title="{{$package->title}}" data-price="{{$package->price}}" data-header="{{$package->header}}" data-description="{{$package->description}}" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-pencil"></i>
                             </button>
                           </td>
                         </tr>
@@ -192,18 +203,59 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form>
-                     
+                  <form method="post" action="{{url('dashboard/packagesUpdate')}}">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    
+                    <div class="form-group">
+                      <label for="inputItemHeader">DB id</label>
+                      <input type="text" class="form-control" id="editItemDBID" name="editItemDBID" readonly>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputItemId">Webpage Id</label>
+                        <input type="text" class="form-control" id="editItemId" name="editItemId" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputItemDatatype">Item "datatype"</label>
+                        <input type="text" class="form-control" id="editItemDatatype" name="editItemDatatype" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-8">
+                        <label for="inputItemTitle">Title</label>
+                        <input type="text" class="form-control" id="editItemTitle" name="editItemTitle" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputItemPrice">Price</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">₹</div>
+                          </div>
+                          <input type="number" class="form-control" id="editItemPrice" name="editItemPrice" required>
+                        </div>           
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputItemHeader">Header</label>
+                      <input type="text" class="form-control" id="editItemHeader" name="editItemHeader" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputItemDescription">Description</label>
+                      <textarea type="text" class="form-control" id="editItemDescription" name="editItemDescription" rows="5" required></textarea>
+                    </div>
+                    <div class="text-right">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Done</button>
+                 
                 </div>
               </div>
             </div>
           </div>
-
+          
           <div class="modal fade" id="insertModal" tabindex="-1" role="dialog" aria-labelledby="insertModalTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -220,17 +272,17 @@
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputItemId">Webpage Id</label>
-                        <input type="text" class="form-control" id="inputItemId" name="inputItemId" placeholder="id-0" required>
+                        <input type="text" class="form-control" id="inputItemId" name="inputItemId" placeholder="eg: id-0" required>
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputItemDatatype">Item "datatype"</label>
-                        <input type="text" class="form-control" id="inputItemDatatype" name="inputItemDatatype" placeholder="cat-item-1" required>
+                        <input type="text" class="form-control" id="inputItemDatatype" name="inputItemDatatype" placeholder="eg: cat-item-1" required>
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-8">
                         <label for="inputItemTitle">Title</label>
-                        <input type="text" class="form-control" id="inputItemTitle" name="inputItemTitle" placeholder="Skyhome Smart Package" required>
+                        <input type="text" class="form-control" id="inputItemTitle" name="inputItemTitle" placeholder="eg: Skyhome Smart Package" required>
                       </div>
                       <div class="form-group col-md-4">
                         <label for="inputItemPrice">Price</label>
@@ -238,18 +290,18 @@
                           <div class="input-group-prepend">
                             <div class="input-group-text">₹</div>
                           </div>
-                          <input type="number" class="form-control" id="inputItemPrice" name="inputItemPrice" placeholder="100000" required>
+                          <input type="number" class="form-control" id="inputItemPrice" name="inputItemPrice" placeholder="eg: 10000" required>
                         </div>
                         
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputItemHeader">Header</label>
-                      <input type="text" class="form-control" id="inputItemHeader" name="inputItemHeader" placeholder="Ideal for builders & hotels (> 40,000 sq ft)" required>
+                      <input type="text" class="form-control" id="inputItemHeader" name="inputItemHeader" placeholder="eg: Ideal for builders & hotels (> 40,000 sq ft)" required>
                     </div>
                     <div class="form-group">
                       <label for="inputItemDescription">Description</label>
-                      <textarea type="text" class="form-control" id="inputItemDescription" name="inputItemDescription" placeholder="Smart home is......" rows="5" required></textarea>
+                      <textarea type="text" class="form-control" id="inputItemDescription" name="inputItemDescription" placeholder="eg: Smart home is......" rows="5" required></textarea>
                     </div>
                     <div class="text-right">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -271,6 +323,26 @@
         </div>
       </body>
       <script type="text/javascript">
+        $('#editModal').on('show.bs.modal',function(e)
+        {
+          var id=$(e.relatedTarget).data('id');
+          var dataId=$(e.relatedTarget).data('dataid');
+          var datatype=$(e.relatedTarget).data('datatype');
+          var dataTitle=$(e.relatedTarget).data('title');
+          var dataPrice=$(e.relatedTarget).data('price');
+          var dataHeader=$(e.relatedTarget).data('header');
+          var dataDescription=$(e.relatedTarget).data('description');
+
+          $(e.currentTarget).find('input[name="editItemDBID"]').val(id);
+          $(e.currentTarget).find('input[name="editItemId"]').val(dataId);
+          $(e.currentTarget).find('input[name="editItemDatatype"]').val(datatype);
+          $(e.currentTarget).find('input[name="editItemTitle"]').val(dataTitle);
+          $(e.currentTarget).find('input[name="editItemPrice"]').val(dataPrice.substring(1));
+          $(e.currentTarget).find('input[name="editItemHeader"]').val(dataHeader);
+          $(e.currentTarget).find('textarea[name="editItemDescription"]').val(dataDescription);
+          
+        });
+        
         $(document).ready(function(){
             $('#master').on('click',function(e){
                 if($(this).is(':checked',true))
