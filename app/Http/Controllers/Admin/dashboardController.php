@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\RedirectResponse;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\package;
 
 class dashboardController extends Controller
 {
@@ -41,9 +43,21 @@ class dashboardController extends Controller
     public function packagesDeleteAll(Request $request)
     {
         $ids=$request->ids;
-        //DB::table('packages')->whereIn('id',explode(",",$ids))->delete();
+       // DB::table('packages')->whereIn('id',explode(",",$ids))->delete();
         return response()->json(['success'=>"Packages deleted succesfully"]);
     }
+    public function packagesInsert(Request $request)
+    {
+        $package = new package;
+        $package->dataid=$request->inputItemId;
+        $package->datatype=$request->inputItemDatatype;
+        $package->title=$request->inputItemTitle;
 
+        $package->price="₹" . $request->inputItemPrice;
+        $package->header=$request->inputItemHeader;
+        $package->description=$request->inputItemDescription;
+        $package->save();
+        return redirect('dashboard/packages')->with('insertStatus','Your package was succesfully added.');
+    }
     
 }

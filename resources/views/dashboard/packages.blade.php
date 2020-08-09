@@ -9,7 +9,8 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
+        {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet"> --}}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-confirmation2/dist/bootstrap-confirmation.min.js"></script>
         
@@ -69,7 +70,7 @@
                   {{Auth::user()->name}}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-                  <a class="dropdown-item" href="logout">
+                  <a class="dropdown-item" href="../logout">
                     <span>
                       <strong>
                        Logout
@@ -98,6 +99,28 @@
                 <i class="fa fa-database"></i> Packages
               </div>
               <div class="card-body">
+                @if(session('insertStatus'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <h4>Amazing!</h4>
+                  <p>{{session('insertStatus')}}</p>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                @endif
+                <div>
+                  <button style="margin-bottom: 10px" class="btn btn-secondary" data-toggle="modal" data-target="#insertModal">
+                    <i class="fa fa-plus"></i>
+                    <b>Insert a package</b>
+                  </button>
+                  <button style="margin-bottom: 10px" class="btn btn-danger delete_all" data-url="{{url('dashboard/packagesDeleteAll')}}">
+                    <i class="fa fa-trash"></i>  
+                    Delete All Selected
+                  </button>
+                </div>
+                <div>
+                  
+              </div> 
                 <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -133,15 +156,7 @@
                       @endforeach
                     </tbody>
                   </table>
-                </div>
-                <div>
-                    <button style="margin-bottom: 10px" class="btn btn-danger delete_all" data-url="{{url('dashboard/packagesDeleteAll')}}">
-                        Delete All Selected
-                    </button>
-                </div>    
-                <div class="spinner-grow" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
+                </div>                
               </div>
               <div class="card-footer small text-muted">
                 {{-- Retrieved <span id="datetime"></span>
@@ -188,6 +203,66 @@
               </div>
             </div>
           </div>
+
+          <div class="modal fade" id="insertModal" tabindex="-1" role="dialog" aria-labelledby="insertModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="insertModalLongTitle">Insert a package</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="{{url('dashboard/packages')}}" method="post">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputItemId">Webpage Id</label>
+                        <input type="text" class="form-control" id="inputItemId" name="inputItemId" placeholder="id-0" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputItemDatatype">Item "datatype"</label>
+                        <input type="text" class="form-control" id="inputItemDatatype" name="inputItemDatatype" placeholder="cat-item-1" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-8">
+                        <label for="inputItemTitle">Title</label>
+                        <input type="text" class="form-control" id="inputItemTitle" name="inputItemTitle" placeholder="Skyhome Smart Package" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputItemPrice">Price</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">₹</div>
+                          </div>
+                          <input type="number" class="form-control" id="inputItemPrice" name="inputItemPrice" placeholder="100000" required>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputItemHeader">Header</label>
+                      <input type="text" class="form-control" id="inputItemHeader" name="inputItemHeader" placeholder="Ideal for builders & hotels (> 40,000 sq ft)" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputItemDescription">Description</label>
+                      <textarea type="text" class="form-control" id="inputItemDescription" name="inputItemDescription" placeholder="Smart home is......" rows="5" required></textarea>
+                    </div>
+                    <div class="text-right">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                    
+
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
           {{-- $('#editModal').on('show.bs.modal',function(e){
               var opener=e.relatedTarget;
               var 
@@ -223,7 +298,7 @@
                     var join_selected_values=allVals.join(",");
                     var baap=$(this).parent();
                     baap.html(
-                        `<div class="progress" style="width:25%"><div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>`
+                        `<button style="margin-bottom: 10px" class="btn btn-secondary" disabled><i class="fa fa-plus"></i><b> Insert a package</b></button> <button style="margin-bottom: 10px" class="btn btn-danger"><div class="spinner-grow spinner-grow-sm" role="status"><span class="sr-only">Loading...</span></div></button>`
                     );
                     $.ajax({
                         url:$(this).data('url'),
@@ -235,7 +310,7 @@
                                 $(".sub_chk:checked").each(function(){
                                     $(this).parents('tr').remove();
                                 });
-                                baap.html(`<button style="margin-bottom: 10px" class="btn btn-danger delete_all" data-url="{{url('dashboard/packagesDeleteAll')}}">Delete All Selected</button>`);
+                                baap.html(`<button style="margin-bottom: 10px" class="btn btn-secondary" disabled><i class="fa fa-plus"></i><b> Insert a package</b></button> <button style="margin-bottom: 10px" class="btn btn-warning" type="button" disabled><span class="spinner-border spinner-border-sm" role="status"></span>  Refreshing..</button>`);
                                 alert(data['success']);
                                 location.reload(true);
                             }
@@ -265,7 +340,7 @@
             
             var baap=$(this).parent();
             baap.html(
-                `<div class="progress"><div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>`
+                `<button style="margin-bottom: 10px" class="btn btn-danger"><div class="spinner-grow spinner-grow-sm" role="status"><span class="sr-only">Loading...</span></div></button>`
             );
                 
             var selected_values=[];
@@ -277,9 +352,10 @@
                 data:'ids='+selected_values,
                 success:function(data){
                     if(data['success']){
-                      baap.parent().remove();
-                      baap.html(`<button type="button" style="margin-bottom: 10px" class="btn btn-outline-danger delete_single" disabled><i class="fa fa-check"></i></button>`);
+                      
+                      baap.html(`<button style="margin-bottom: 10px" class="btn btn-primary" type="button" disabled><span class="spinner-border spinner-border-sm" role="status"></span> <span class="sr-only"> Refreshing..</span></button>`);
                       alert(data['success']);
+                      baap.parent().remove();
                       location.reload(true);
                     }
                     else if(data['error']){
